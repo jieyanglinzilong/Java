@@ -1,0 +1,80 @@
+package lab12;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.TextArea;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.event.AncestorListener;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class test extends JFrame implements ActionListener {
+
+	private JPanel contentPane;
+	private JTextField text;
+	JTextArea textArea;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					test frame = new test();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public test() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(new BorderLayout(0, 0));
+		
+		JPanel panel = new JPanel();
+		contentPane.add(panel, BorderLayout.NORTH);
+		
+		JLabel label = new JLabel("姓名");
+		panel.add(label);
+		
+		text = new JTextField();
+		panel.add(text);
+		text.addActionListener(this);
+		text.setColumns(10);
+		
+		JButton button = new JButton("确定");
+		panel.add(button);
+		button.addActionListener(this);
+		JScrollPane scrollPane = new JScrollPane();
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		
+		textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		 String n=text.getText();
+		 textArea.append(n+"\n");
+		 text.setText(null);// TODO Auto-generated method stub
+		
+	}
+}

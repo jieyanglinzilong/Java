@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <!--访问时使用 localhost:8080/helloworld 访问-->
+        <action name="helloworld" class="user_information.user">
+            <!--结果集，即action类中 SUCCESS 返回的视图-->
+            <result name="success">
+                /E101.jsp
+            </result>
+            <result name="error">
+                /NewFile.jsp
+            </result>
+        </action>
+    </package>
+</struts>

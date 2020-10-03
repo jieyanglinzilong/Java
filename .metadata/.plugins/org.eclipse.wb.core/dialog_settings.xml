@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.model.util.RenameConvertSupport$RenameDialog">
+		<item value="566" key="x"/>
+		<item value="788" key="width"/>
+		<item value="285" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.order.ReorderDialog">
+		<item value="575" key="x"/>
+		<item value="769" key="width"/>
+		<item value="229" key="y"/>
+		<item value="561" key="height"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item value="566" key="x"/>
+		<item value="788" key="width"/>
+		<item value="252" key="y"/>
+		<item value="515" key="height"/>
+	</section>
+</section>

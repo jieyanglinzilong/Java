@@ -1,0 +1,21 @@
+INDEX VERSION 1.126
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3511768871.index
+\frist\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\679541265.index
+\FRIST\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1409289404.index
+\myjspproject\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3690436538.index
+\frist01\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3134692825.index
+\serlevt_two\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2873358650.index
+\myjspproject\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2524991205.index
+\jsp_files\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2873235933.index
+\serlevt\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3034307433.index
+\frist01\src
+D:\javafiles\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1173007322.index
+\web\src

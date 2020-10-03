@@ -1,0 +1,17 @@
+package lab10;
+
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		String a=scanner.next();
+	    String []b=a.split(" ");
+		if(a.startsWith("w")){
+			count++;
+		}
+        System.out.println(count);
+	}
+
+}

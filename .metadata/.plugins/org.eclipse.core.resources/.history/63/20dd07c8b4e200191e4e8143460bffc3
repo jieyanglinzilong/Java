@@ -1,0 +1,8 @@
+<%@ page pageEncoding="utf-8" %>
+<String copyright="&nbsp;All Copyright&copy;2019渣渣辉";%>
+<table width="781"heigth="279"border="0"cellpadding="0"background="lib/balloc.jpg"
+>
+<tr>
+<td><%=copyright %></td>
+</tr>
+</table>

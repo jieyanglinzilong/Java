@@ -1,0 +1,18 @@
+package lab06;
+
+public class String_mothed {
+
+	public static void main(String[] args) {
+		String a=new String("hello");
+		String  b =a.substring(1, 3);
+		System.out.println(b+" "+a);
+		String c=String.valueOf("我是董辉的爸爸");
+		System.out.println(b+" "+a+" "+c);
+		char[] d=new char[20];
+		d=a.getChars(1, 3, a, 0);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

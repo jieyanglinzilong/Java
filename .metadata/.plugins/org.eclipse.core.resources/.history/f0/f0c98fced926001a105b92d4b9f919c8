@@ -1,0 +1,50 @@
+package lab08;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLayeredPane;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+
+public class test extends JFrame {
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					test frame = new test();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public test() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 720, 600);
+		getContentPane().setLayout(null);
+		
+		JLayeredPane layeredPane = new JLayeredPane();
+		layeredPane.setBounds(220, 229, 1, 1);
+		getContentPane().add(layeredPane);
+		
+		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon("D:\\Html\\照片\\壁纸\\1BCBA80052B57DD188B149988136E6D7.jpg"));
+		label.setBounds(100, 100, 720, 600);
+		getContentPane().add(label);
+		
+	}
+}

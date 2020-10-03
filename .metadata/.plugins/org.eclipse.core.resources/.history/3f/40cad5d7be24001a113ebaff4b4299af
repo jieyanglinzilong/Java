@@ -1,0 +1,15 @@
+package lab07;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class day {
+
+	public static void main(String[] args) {
+		Date a=new Date();
+		Calendar b=new Calendar();
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package lab07;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class day {
+
+	public static void main(String[] args) {
+		Date a=new Date();
+		Calendar b= Calendar.getInstance();
+		b.set(2019, 7, 16);
+		System.out.println(b.DATE);
+		// TODO Auto-generated method stub
+
+	}
+
+}

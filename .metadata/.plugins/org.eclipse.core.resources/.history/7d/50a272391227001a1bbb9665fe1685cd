@@ -1,0 +1,6 @@
+package lab09;
+
+abstract class animal {
+ abstract void speak();
+ abstract void eat();
+}

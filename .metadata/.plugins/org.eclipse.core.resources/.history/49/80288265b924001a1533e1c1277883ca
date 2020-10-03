@@ -1,0 +1,13 @@
+package lab06;
+
+public class String_mothed {
+
+	public static void main(String[] args) {
+		String a=new String("hell0");
+		String[] b =a.split(a, 1);
+		System.out.println(b);
+		// TODO Auto-generated method stub
+
+	}
+
+}

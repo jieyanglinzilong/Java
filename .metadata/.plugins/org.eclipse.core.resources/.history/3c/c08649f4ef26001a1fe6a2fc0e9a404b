@@ -1,0 +1,132 @@
+package lab08;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class test1 extends JFrame implements ActionListener {
+
+	private JPanel contentPane;
+    String name;
+    String password;
+    JTextArea textArea;
+	/**
+	 * Launch the application.
+	 */
+	
+
+	/**
+	 * Create the frame.
+	 */
+	public test1( String name,String password) {
+		this.name=name;
+		this.password=password;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu menu = new JMenu("人事管理");
+		menuBar.add(menu);
+		
+		JMenuItem people_infromation = new JMenuItem("人员薪酬记录");
+		menu.add(people_infromation);
+		people_infromation.addActionListener(this);
+		JMenuItem pepole_slary = new JMenuItem("人员信息");
+		menu.add(pepole_slary);
+		pepole_slary.addActionListener(this);
+		JMenu goods_information = new JMenu("商品信息");
+		menuBar.add(goods_information);
+		goods_information.addActionListener(this);
+		JMenu customer = new JMenu("客户信息");
+		menuBar.add(customer);
+		customer.addActionListener(this);
+		JMenu suplyment = new JMenu("供应商");
+		menuBar.add(suplyment);
+		suplyment.addActionListener(this);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		
+		 textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		String name=(String)e.getActionCommand();
+		if("客户信息".equals(name)){
+			   try
+			   {  String driverName="com.microsoft.sqlserver.jdbc.SQLServerDriver";
+			      String dbURL="jdbc:sqlserver://localhost:1433;DatabaseName=商场信息管理";
+			      String userName=name;
+			      String userPwd=password;
+			       Class.forName(driverName);
+			       Connection dbConn=DriverManager.getConnection(dbURL,userName,userPwd);
+			       Statement n=dbConn.createStatement();
+			       ResultSet m;
+			       String sql="select*from 客户表";
+			       m=n.executeQuery(sql);
+			       String name1[]=new String[20];
+			       String id[]=new String[20];
+			       int sum[]=new int[20];
+			       int i=1;
+			       while(m.next()){
+			    	   id[i]=m.getString(i);
+			    	   name1[i]=m.getString(i);
+			    	   sum[i]=m.getInt(i);
+			    	   i++;
+			    	   
+			       }
+			       while(i>=1){
+			    	   textArea.append(id[i]+" "+name1[i]+" "+sum[i]+"\n");
+			    	   i--;
+			       }
+			       
+			    }
+			     catch(Exception e1)
+			  {
+			       e1.printStackTrace();
+			       JOptionPane.showConfirmDialog(this,"请求人员薪酬信息失败","消息对话",JOptionPane.YES_NO_CANCEL_OPTION);
+			  }
+			
+		}
+        if("人员信息".equals(name)){
+			
+		}
+        if("商品信息".equals(name)){
+			
+		}
+        if("人事薪酬记录".equals(name)){
+			
+		}
+        if("供应商".equals(name)){
+			
+		}
+		
+		
+		
+		
+	}
+
+}

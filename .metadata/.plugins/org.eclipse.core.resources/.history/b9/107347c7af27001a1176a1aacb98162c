@@ -1,0 +1,8 @@
+package lab09;
+
+abstract class animal {
+ abstract void speak();
+ void eat(){
+	 System.out.print(3);
+ }
+}

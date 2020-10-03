@@ -1,0 +1,25 @@
+package lab10;
+
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		String a=scanner.next();
+	    String []b=a.split(" ");
+	    int i=0;
+	    int j=0;
+	    int k=0;
+		while(i<=b.length){
+			if(b[i].startsWith("w")){
+				j++;
+			}
+			if(b[i].contains("or")){
+				k++;
+			}
+		}
+        
+	}
+
+}

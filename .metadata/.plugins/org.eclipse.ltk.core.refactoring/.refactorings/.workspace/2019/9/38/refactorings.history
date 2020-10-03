@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;使用泛型的接口&apos;" deleteContents="false" description="Delete resource &apos;使用泛型的接口&apos;" element1="/使用泛型的接口" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1568553183611"/>
+</session>

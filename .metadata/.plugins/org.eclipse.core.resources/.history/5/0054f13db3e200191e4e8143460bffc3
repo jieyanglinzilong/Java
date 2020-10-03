@@ -1,0 +1,8 @@
+<%@ page pageEncoding="ISO-8859-1" %>
+<String copyrigth="&nbsp;All Copyrigth&copy;2019渣渣辉";%>
+<table width="781"heigth="279"border="0"cellpadding="0"background="lib/balloc.jpg"
+>
+<tr>
+<td><%=copyrigth %></td>
+</tr>
+</table>
